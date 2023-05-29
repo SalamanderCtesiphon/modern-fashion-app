@@ -36,3 +36,28 @@ a {
 a:hover {
   color: gray;
 }
+
+/* Sign In page */
+
+.page {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.781);
+}
+
+.page .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 10em;
+  width: 15em;
+  margin-top: 15em;
+  padding: 1em;
+  border-radius: 1em;
+}
