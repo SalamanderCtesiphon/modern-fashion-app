@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { auth } from "../config/firebase"
-import { createUserWithEmailAndPassword } from 'firebase/auth'
+import { signInWithEmailAndPassword } from 'firebase/auth'
 
 function SignInForm() {
   const [email, setEmail] = useState('')
@@ -8,12 +8,16 @@ function SignInForm() {
    
   const signIn = async () => {
     try {
-      await createUserWithEmailAndPassword(auth, email, password)
-      console.log('success')
-    } catch (err) {
-      console.log(err)
+      await signInWithEmailAndPassword(auth, email, password)
+        .then((userCredential) => {
+          const user = userCredential.user
+        })
+    } catch (error) {
+      const errorCode = error.code
+      const errorMessage = error.message
     }
   }
+  
   return (
     <div className="page">
       <div className="card sign-in">
