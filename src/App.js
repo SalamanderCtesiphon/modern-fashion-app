@@ -23,12 +23,11 @@ function App() {
     onAuthStateChanged(auth, (user) => {
       setCurrentUser(user)
     })
-    console.log(currentUser)
   }, [])
 
   return (
     <div className="App">
-      <Header />
+      <Header currentUser={currentUser} />
       <BrowserRouter>
         <AuthProvider value={{currentUser}}>
           <Routes>
