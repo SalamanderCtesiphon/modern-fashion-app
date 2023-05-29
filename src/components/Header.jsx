@@ -1,17 +1,14 @@
 import React from 'react'
 
 
-function Header() {
-
- 
-
+function Header({currentUser}) {
   
 
   return (
     <div className='header'>
       <div className="left-container">
         <div className="icon-holder"><a href="home">ICON</a></div>
-        <h3 className="title">MODERN FASHION</h3>
+        {currentUser ? <h3 className="title">Current User</h3> : <h3 className="title">MODERN FASHION</h3>}
       </div>
       <div className="right-container">
         <ul className="link-list">
