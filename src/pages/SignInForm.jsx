@@ -16,6 +16,7 @@ function SignInForm() {
       const errorCode = error.code
       const errorMessage = error.message
     }
+    window.location = "home"
   }
 
   const logout = async () => {
