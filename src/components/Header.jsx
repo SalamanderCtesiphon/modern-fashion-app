@@ -9,10 +9,10 @@ function Header() {
       </div>
       <div className="right-container">
         <ul className="link-list">
-          <li className="link"><a href="shirts">SHIRTS</a></li>
-          <li className="link"><a href="pants">PANTS</a></li>
-          <li className="link"><a href="shoes">SHOES</a></li>
-          <li className="link"><a href="checkout">CHECKOUT</a></li>
+          <li className="link"><a className='link-tag' href="shirts">SHIRTS</a></li>
+          <li className="link"><a className='link-tag' href="pants">PANTS</a></li>
+          <li className="link"><a className='link-tag' href="shoes">SHOES</a></li>
+          <li className="link"><a className='link-tag' href="checkout">CHECKOUT</a></li>
         </ul>
       </div>
     </div>
