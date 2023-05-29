@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { auth } from "../config/firebase"
-import { signInWithEmailAndPassword } from 'firebase/auth'
+import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth'
 
 function SignInForm() {
   const [email, setEmail] = useState('')
@@ -17,7 +17,13 @@ function SignInForm() {
       const errorMessage = error.message
     }
   }
-  
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      console.log(user)
+    }
+  })
+
   return (
     <div className="page">
       <div className="card sign-in">
@@ -31,7 +37,7 @@ function SignInForm() {
           type='password'
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={signIn}>Sign In</button>
+        <button onClick={signIn}><a href="home">Sign In</a></button>
       </div>
     </div>
   )
