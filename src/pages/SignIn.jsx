@@ -13,7 +13,7 @@ function SignIn() {
         <p>or</p>
         <a href="home">Continues as a guest</a>
         <p>Not a member?</p>
-        <a href="">Sign Up!</a>
+        <a href="signupform">Sign Up!</a>
       </div>
     </div>
   )
