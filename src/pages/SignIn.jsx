@@ -9,6 +9,7 @@ function SignIn() {
   const signIn = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password)
+      console.log('success')
     } catch (err) {
       console.log(err)
     }
@@ -17,6 +18,7 @@ function SignIn() {
   const logout = async () => {
     try {
       await signOut(auth)
+      console.log('signed out')
     } catch (err) {
       console.log(err)
     }
