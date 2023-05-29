@@ -10,7 +10,8 @@ function SignUpForm() {
     try {
       await createUserWithEmailAndPassword(auth, email, password)
         .then(async (userCredential) => {
-          const user = userCredential.user
+          const user = userCredential.user.uid
+          console.log(user)
         })
     } catch (error) {
       const errorCode = error.code
