@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { auth } from "../config/firebase"
-import { onAuthStateChanged, signInWithEmailAndPassword } from 'firebase/auth'
+import { signInWithEmailAndPassword, signOut } from 'firebase/auth'
 
 function SignInForm() {
   const [email, setEmail] = useState('')
@@ -18,10 +18,13 @@ function SignInForm() {
     }
   }
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
+  const logout = async () => {
+    try {
+      await signOut(auth)
+    } catch (err) {
+      console.error(err)
     }
-  })
+  }
 
   return (
     <div className="page">
@@ -36,7 +39,8 @@ function SignInForm() {
           type='password'
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={() => signIn()}><a href="home">Sign In</a></button>
+        <button onClick={() => signIn()}><a>Sign In</a></button>
+        <button onClick={() => logout()}>Logout</button>
       </div>
     </div>
   )
