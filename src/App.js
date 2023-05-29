@@ -23,6 +23,7 @@ function App() {
     onAuthStateChanged(auth, (user) => {
       setCurrentUser(user)
     })
+    console.log(currentUser)
   }, [])
 
   return (
