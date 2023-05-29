@@ -7,6 +7,7 @@ function Header() {
   const logout = async () => {
     try {
       await signOut(auth)
+      console.log('clicked')
     } catch (err) {
       console.error(err)
     }
