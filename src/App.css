@@ -67,3 +67,7 @@ a {
 .sign-in { 
   height: 10em;
 }
+
+li {
+  list-style: none;
+}
