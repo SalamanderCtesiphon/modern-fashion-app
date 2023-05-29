@@ -11,7 +11,6 @@ function SignInForm() {
       await signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           const user = userCredential.user
-          console.log(user)
         })
     } catch (error) {
       const errorCode = error.code
@@ -21,7 +20,6 @@ function SignInForm() {
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      console.log(user)
     }
   })
 
