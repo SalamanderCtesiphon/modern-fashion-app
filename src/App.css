@@ -28,12 +28,16 @@
   cursor: pointer;
 }
 
-a {
+.link-tag {
   text-decoration: none;
   color: white;
 }
 
-a:hover {
+a {
+  text-decoration: none;
+}
+
+.link-tag:hover {
   color: gray;
 }
 
@@ -55,9 +59,11 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   background-color: white;
-  height: 10em;
-  width: 15em;
   margin-top: 15em;
   padding: 1em;
   border-radius: 1em;
+}
+
+.sign-in { 
+  height: 10em;
 }
