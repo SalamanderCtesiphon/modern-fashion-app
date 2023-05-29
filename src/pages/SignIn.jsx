@@ -1,10 +1,6 @@
 import React from 'react'
 
 function SignIn() {
-
- 
-
-
   return (
     <div className='page'>
       <div className='card'>
