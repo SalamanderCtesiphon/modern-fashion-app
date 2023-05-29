@@ -8,6 +8,7 @@ import Shirts from './pages/Shirts';
 import Pants from './pages/Pants';
 import Shoes from './pages/Shoes';
 import Checkout from './pages/Checkout';
+import SignIn from './pages/SignIn';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Header />
       <BrowserRouter>
         <Routes>
-          <Route index path='home' element={<Home />} />
+          <Route index element={<SignIn />} />
+          <Route path='home' element={<Home />} />
           <Route path='success' element={<Success />} />
           <Route path='cancel' element={<Cancel />} />
           <Route path='shirts' element={<Shirts />} />
