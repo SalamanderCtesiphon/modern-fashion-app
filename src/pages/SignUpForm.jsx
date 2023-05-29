@@ -9,11 +9,16 @@ function SignUpForm() {
   const signIn = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password)
-      console.log('success')
-    } catch (err) {
-      console.log(err)
+        .then(async (userCredential) => {
+          const user = userCredential.user
+        })
+    } catch (error) {
+      const errorCode = error.code
+      const errorMessage = error.message
     }
+    
   }
+
   return (
     <div className="page">
       <div className="card sign-in">
@@ -27,7 +32,7 @@ function SignUpForm() {
           type='password'
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={signIn}>Sign In</button>
+        <button onClick={signIn}>Sign Up</button>
       </div>
     </div>
   )
