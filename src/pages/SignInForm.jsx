@@ -37,7 +37,7 @@ function SignInForm() {
           type='password'
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={signIn}><a href="home">Sign In</a></button>
+        <button onClick={() => signIn()}><a href="home">Sign In</a></button>
       </div>
     </div>
   )
