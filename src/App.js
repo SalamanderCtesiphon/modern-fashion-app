@@ -10,6 +10,7 @@ import Shoes from './pages/Shoes';
 import Checkout from './pages/Checkout';
 import SignIn from './pages/SignIn';
 import SignInForm from './pages/SignInForm';
+import SignUpForm from './pages/SignUpForm';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Routes>
           <Route index element={<SignIn />} />
           <Route path='signinform' element={<SignInForm />} />
+          <Route path='signupform' element={<SignUpForm />} />
           <Route path='home' element={<Home />} />
           <Route path='success' element={<Success />} />
           <Route path='cancel' element={<Cancel />} />
