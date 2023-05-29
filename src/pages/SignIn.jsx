@@ -10,7 +10,7 @@ function SignIn() {
     try {
       await createUserWithEmailAndPassword(auth, email, password)
     } catch (err) {
-      console.err(err)
+      console.log(err)
     }
   }
 
