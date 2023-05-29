@@ -1,12 +1,9 @@
 import React from 'react'
-import { signOut, getAuth } from 'firebase/auth'
+
 
 function Header() {
 
-  function signOutUser() {
-    // Sign out of Firebase.
-    signOut(getAuth())
-  }
+ 
 
   
 
@@ -15,7 +12,6 @@ function Header() {
       <div className="left-container">
         <div className="icon-holder"><a href="home">ICON</a></div>
         <h3 className="title">MODERN FASHION</h3>
-        <button onClick={() => signOutUser()} >Logout</button>
       </div>
       <div className="right-container">
         <ul className="link-list">
