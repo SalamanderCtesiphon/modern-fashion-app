@@ -12,6 +12,7 @@ function Header() {
           <li className="link">TOPS</li>
           <li className="link">PANTS</li>
           <li className="link">SHOES</li>
+          <li className="link">CHECKOUT</li>
         </ul>
       </div>
     </div>
