@@ -18,8 +18,7 @@ function Header({currentUser}) {
         <div className="icon-holder"><a href="home">ICON</a></div>
         {currentUser ? <h3 className="title">Current User</h3> : <h3 className="title">MODERN FASHION</h3>}
       </div>
-      <button onClick={() => logout()}>Logout</button>
-      <button><a href='signinform'>Sign in</a></button>
+      {currentUser ? <button onClick={() => logout()}>Logout</button> : <button><a href='signin'>Sign in</a></button>}
       <div className="right-container">
         <ul className="link-list">
           <li className="link"><a className='link-tag' href="shirts">SHIRTS</a></li>
