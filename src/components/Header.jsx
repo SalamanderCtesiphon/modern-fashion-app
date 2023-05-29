@@ -4,15 +4,15 @@ function Header() {
   return (
     <div className='header'>
       <div className="left-container">
-        <div className="icon-holder">ICON</div>
+        <div className="icon-holder"><a href="home">ICON</a></div>
         <h3 className="title">MODERN FASHION</h3>
       </div>
       <div className="right-container">
         <ul className="link-list">
-          <li className="link">TOPS</li>
-          <li className="link">PANTS</li>
-          <li className="link">SHOES</li>
-          <li className="link">CHECKOUT</li>
+          <li className="link"><a href="shirts">SHIRTS</a></li>
+          <li className="link"><a href="pants">PANTS</a></li>
+          <li className="link"><a href="shoes">SHOES</a></li>
+          <li className="link"><a href="checkout">CHECKOUT</a></li>
         </ul>
       </div>
     </div>
