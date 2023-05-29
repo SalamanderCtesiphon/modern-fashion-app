@@ -14,10 +14,8 @@ function Header() {
 
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      console.log(user)
-    } else {
-      console.log(user)
-    }
+      console.log(user.uid)
+    } 
   })
 
   return (
@@ -25,7 +23,7 @@ function Header() {
       <div className="left-container">
         <div className="icon-holder"><a href="home">ICON</a></div>
         <h3 className="title">MODERN FASHION</h3>
-        <button onClick={logout} >Logout</button>
+        <button onClick={() => logout()} >Logout</button>
       </div>
       <div className="right-container">
         <ul className="link-list">
