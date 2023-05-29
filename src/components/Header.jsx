@@ -1,30 +1,21 @@
 import React from 'react'
-import { auth } from '../config/firebase'
-import { signOut, onAuthStateChanged } from 'firebase/auth'
+import { signOut, getAuth } from 'firebase/auth'
 
 function Header() {
 
-  const logout = async () => {
-    try {
-      await signOut(auth)
-      console.log('clicked')
-    } catch (err) {
-      console.error(err)
-    }
+  function signOutUser() {
+    // Sign out of Firebase.
+    signOut(getAuth())
   }
 
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      console.log(user.uid)
-    } 
-  })
+  
 
   return (
     <div className='header'>
       <div className="left-container">
         <div className="icon-holder"><a href="home">ICON</a></div>
         <h3 className="title">MODERN FASHION</h3>
-        <button onClick={() => logout()} >Logout</button>
+        <button onClick={() => signOutUser()} >Logout</button>
       </div>
       <div className="right-container">
         <ul className="link-list">
