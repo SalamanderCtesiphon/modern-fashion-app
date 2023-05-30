@@ -15,7 +15,7 @@ app.use(express.json())
 
 
 
-const YOUR_DOMAIN = 'http://localhost:4242';
+const YOUR_DOMAIN = 'http://localhost:4000';
 
 app.post('/checkout', async (req, res) => {
   console.log(req.body)
@@ -25,7 +25,7 @@ app.post('/checkout', async (req, res) => {
     lineItems.push(
       {
         price: item.id,
-        quantity: item.quantity,
+        quantity: item.quantity
       }
     )
   });
@@ -34,7 +34,7 @@ app.post('/checkout', async (req, res) => {
     line_items: lineItems,
     mode: 'payment',
     success_url: "http://localhost:3000/success",
-    cancel_url: "http://localhost:3000/cancel",
+    cancel_url: "http://localhost:3000/cancel"
   });
 
 

@@ -17,9 +17,22 @@ function CheckOut() {
 
   let cartTotal = cart.getTotalCost().toFixed(2)
 
-  function paymentProcessor() {
-    console.log('click')
-  }
+  const paymentProcessor = async () => {
+      await fetch("http://localhost:4000/checkout", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        }, 
+        body: JSON.stringify({items: cart.items})
+        }).then((response) => {
+          return response.json()
+        }).then((response) => {
+          if(response.url) {
+            window.location.assign(response.url)
+          }
+        })
+      }
+  
 
   return (
     <div className='checkout-page'>
