@@ -15,6 +15,7 @@ import SignIn from './pages/SignIn';
 import SignInForm from './pages/SignInForm';
 import SignUpForm from './pages/SignUpForm';
 import { AuthProvider } from './AuthContext';
+import CartProvider from './pages/CartContext';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
@@ -27,23 +28,25 @@ function App() {
 
   return (
     <div className="App">
-      <Header currentUser={currentUser} />
-      <BrowserRouter>
-        <AuthProvider value={{currentUser}}>
-          <Routes>
-            <Route index path='signin' element={<SignIn />} />
-            <Route path='signinform' element={<SignInForm />} />
-            <Route path='signupform' element={<SignUpForm />} />
-            <Route path='home' element={<Home />} />
-            <Route path='success' element={<Success />} />
-            <Route path='cancel' element={<Cancel />} />
-            <Route path='shirts' element={<Shirts />} />
-            <Route path='pants' element={<Pants />} />
-            <Route path='shoes' element={<Shoes />} />
-            <Route path='checkout' element={<Checkout />} />
-          </Routes>
-        </AuthProvider>
-      </BrowserRouter>
+      <CartProvider>
+        <Header currentUser={currentUser} />
+        <BrowserRouter>
+          <AuthProvider value={{currentUser}}>
+            <Routes>
+              <Route index path='signin' element={<SignIn />} />
+              <Route path='signinform' element={<SignInForm />} />
+              <Route path='signupform' element={<SignUpForm />} />
+              <Route path='home' element={<Home />} />
+              <Route path='success' element={<Success />} />
+              <Route path='cancel' element={<Cancel />} />
+              <Route path='shirts' element={<Shirts />} />
+              <Route path='pants' element={<Pants />} />
+              <Route path='shoes' element={<Shoes />} />
+              <Route path='checkout' element={<Checkout />} />
+            </Routes>
+          </AuthProvider>
+        </BrowserRouter>
+      </CartProvider>
     </div>
   );
 }
