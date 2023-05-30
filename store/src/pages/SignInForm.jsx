@@ -9,12 +9,8 @@ function SignInForm() {
   const signIn = async () => {
     try {
       await signInWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-          const user = userCredential.user
-        })
     } catch (error) {
-      const errorCode = error.code
-      const errorMessage = error.message
+      console.log(error)
     }
     window.location = "home"
   }
@@ -40,7 +36,7 @@ function SignInForm() {
           type='password'
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={() => signIn()}><a>Sign In</a></button>
+        <button onClick={() => signIn()}>Sign In</button>
         <button onClick={() => logout()}>Logout</button>
       </div>
     </div>

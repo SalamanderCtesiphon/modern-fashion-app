@@ -17,24 +17,29 @@ import runners from '../images/usama-akram-kP6knT7tjn4-unsplash.jpg'
 import joggers from '../images/martin-katler-Y4fKN-RlMV4-unsplash.jpg'
 import hightech from '../images/eugene-chystiakov-b2uYNpBG7Ho-unsplash.jpg'
 
+// coffee: price_1NDUqHALqsWPo0rqaedrsnqV
+// FIRESTORE_API_KEY=sk_test_51NDHdfALqsWPo0rqTYarcWhGze7u5MV3CUfzuJ5XqHacDEVV5FKuMrSjPLv9XfFzroB1DTC6H7mfxVmAKBgA0Dz8006c2RGJAB
+// sunglasses: price_1NDUryALqsWPo0rqBrjlBt4k
+// camera: price_1NDUryALqsWPo0rqBrjlBt4k
+
 const productsArray = [
   {
-    id: '1',
-    title: 'T-Shirts',
-    price: 14.99, 
+    id: 'price_1NDUqHALqsWPo0rqaedrsnqV',
+    title: 'Coffee',
+    price: 4.99, 
     image: tShirts,
     category: 'tops'
   },
   {
-    id: '2',
-    title: 'Shoes',
-    price: 109.99,
+    id: 'price_1NDUryALqsWPo0rqBrjlBt4k',
+    title: 'Sunglasses',
+    price: 9.99,
     image: shoes,
     category: 'footware'
   },
   {
-    id: '3',
-    title: 'Dress Shirt',
+    id: 'price_1NDUryALqsWPo0rqBrjlBt4k',
+    title: 'Camera',
     price: 39.99,
     image: dressShirt,
     category: 'tops'
