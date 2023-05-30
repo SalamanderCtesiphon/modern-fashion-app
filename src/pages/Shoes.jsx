@@ -1,5 +1,6 @@
 import React from 'react'
 import { productsArray } from '../utility/inventory'
+import ProductCard from '../components/ProductCard'
 
 function Shoes() {
   const tempArray= productsArray.filter((product) => {
@@ -11,9 +12,7 @@ function Shoes() {
       <div className="product-display">
         {tempArray.map((product, idx) => (
           <div className="product-card" key={product.id}>
-            <h3>{product.title}</h3>
-            <img src={product.image} alt="product image" />
-            <p>price: {product.price}</p>
+            <ProductCard product={product}></ProductCard>
           </div>
         ))}
       </div>
