@@ -18,8 +18,7 @@ function CheckOut() {
   let cartTotal = cart.getTotalCost().toFixed(2)
 
   function paymentProcessor() {
-    alert("we are currently working to implement a payment service")
-    console.log(cart)
+    console.log('click')
   }
 
   return (
