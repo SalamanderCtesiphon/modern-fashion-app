@@ -31,18 +31,20 @@ function Header({currentUser}) {
           <li className="link"><a className='link-tag' href="shirts">SHIRTS</a></li>
           <li className="link"><a className='link-tag' href="pants">PANTS</a></li>
           <li className="link"><a className='link-tag' href="shoes">SHOES</a></li>
-          <li className="link"><a className='link-tag' href="checkout">CHECKOUT</a></li>
+          <li className="link"><a className='link-tag' href="checkout">CHECKOUT</a>
+          <div className='shopping-cart'>
+            { productsCount > 0 ? 
+              <div className='product-count'>{productsCount}</div>
+              :
+              <></>
+            }
+            <a className="navLinks" href='checkout'></a>
+          </div>
+          </li>
           
         </ul>
-        <div className='shopping-cart'>
-        { productsCount > 0 ? 
-          <div className='product-count'>{productsCount}</div>
-          :
-          <></>
-        }
-        <a className="navLinks" href='checkout'></a>
+        
       </div>
-    </div>
     </div>
   )
 }
