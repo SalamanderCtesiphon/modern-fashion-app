@@ -9,13 +9,8 @@ function SignUpForm() {
   const signIn = async () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password)
-        .then(async (userCredential) => {
-          const user = userCredential.user.uid
-          console.log(user)
-        })
     } catch (error) {
-      const errorCode = error.code
-      const errorMessage = error.message
+      console.log(error)
     }
     window.location = "home"
   }
