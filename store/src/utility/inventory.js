@@ -20,7 +20,7 @@ import hightech from '../images/eugene-chystiakov-b2uYNpBG7Ho-unsplash.jpg'
 // coffee: price_1NDUqHALqsWPo0rqaedrsnqV
 // FIRESTORE_API_KEY=sk_test_51NDHdfALqsWPo0rqTYarcWhGze7u5MV3CUfzuJ5XqHacDEVV5FKuMrSjPLv9XfFzroB1DTC6H7mfxVmAKBgA0Dz8006c2RGJAB
 // sunglasses: price_1NDUryALqsWPo0rqBrjlBt4k
-// camera: price_1NDUryALqsWPo0rqBrjlBt4k
+// camera: price_1NDUsuALqsWPo0rqXmagBcXk
 
 const productsArray = [
   {
@@ -38,7 +38,7 @@ const productsArray = [
     category: 'footware'
   },
   {
-    id: 'price_1NDUryALqsWPo0rqBrjlBt4k',
+    id: 'price_1NDUsuALqsWPo0rqXmagBcXk',
     title: 'Camera',
     price: 39.99,
     image: dressShirt,
