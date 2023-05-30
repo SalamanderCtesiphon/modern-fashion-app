@@ -17,6 +17,11 @@ function CheckOut() {
 
   let cartTotal = cart.getTotalCost().toFixed(2)
 
+  function paymentProcessor() {
+    alert("we are currently working to implement a payment service")
+    console.log(cart)
+  }
+
   return (
     <div className='checkout-page'>
          {productsCount > 0 ?
@@ -28,9 +33,9 @@ function CheckOut() {
 
               <h1 className='total'>Total: {USDollar.format(cartTotal)}</h1>
 
-              <div className='buy-btn' onClick={() => alert("we are currently working to implement a payment service")}>
+              <button onClick={() => paymentProcessor()} className='buy-btn'>
                 Purchase Items!
-              </div>
+              </button>
             </>
           :
           <>
