@@ -71,3 +71,19 @@ a {
 li {
   list-style: none;
 }
+
+/* shopping pages */
+
+.shop-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-display {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr) ) ;
+}
