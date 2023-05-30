@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { auth } from '../config/firebase'
 import { signOut } from 'firebase/auth'
+import { CartContext } from '../pages/CartContext'
+import Icon from '@mdi/react';
+
 
 
 function Header({currentUser}) {
+
+  const cart = useContext(CartContext)
+  const productsCount = cart.items.length
+
   const logout = async () => {
     try {
       await signOut(auth)
@@ -25,8 +32,17 @@ function Header({currentUser}) {
           <li className="link"><a className='link-tag' href="pants">PANTS</a></li>
           <li className="link"><a className='link-tag' href="shoes">SHOES</a></li>
           <li className="link"><a className='link-tag' href="checkout">CHECKOUT</a></li>
+          
         </ul>
+        <div className='shopping-cart'>
+        { productsCount > 0 ? 
+          <div className='product-count'>{productsCount}</div>
+          :
+          <></>
+        }
+        <a className="navLinks" href='checkout'></a>
       </div>
+    </div>
     </div>
   )
 }
