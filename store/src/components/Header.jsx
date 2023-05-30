@@ -2,9 +2,6 @@ import React, { useContext } from 'react'
 import { auth } from '../config/firebase'
 import { signOut } from 'firebase/auth'
 import { CartContext } from '../pages/CartContext'
-import Icon from '@mdi/react';
-
-
 
 function Header({currentUser}) {
 
@@ -38,7 +35,6 @@ function Header({currentUser}) {
               :
               <></>
             }
-            <a className="navLinks" href='checkout'></a>
           </div>
           </li>
           
