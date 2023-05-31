@@ -24,11 +24,11 @@ function Header({currentUser}) {
       </div>
      <div className="right-side">
       <div className="right-container">
-          <ul className="link-list">
-            <li className="link"><a className='link-tag' href="shirts">SHIRTS</a></li>
-            <li className="link"><a className='link-tag' href="pants">PANTS</a></li>
-            <li className="link"><a className='link-tag' href="shoes">SHOES</a></li>        
-          </ul>
+          <nav className="link-list">
+            <a className='link-tag' href="shirts">SHIRTS</a>
+            <a className='link-tag' href="pants">PANTS</a>
+            <a className='link-tag' href="shoes">SHOES</a> 
+          </nav>
         </div>
         <div className="utility-container">
           <a className='link-tag' href="checkout">CHECKOUT</a>
