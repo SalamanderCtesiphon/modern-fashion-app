@@ -29,21 +29,22 @@ function App() {
   return (
     <div className="App">
       <CartProvider>
-        <Header currentUser={currentUser} />
         <BrowserRouter>
           <AuthProvider value={{currentUser}}>
-            <Routes>
-              <Route index path='signin' element={<SignIn />} />
-              <Route path='signinform' element={<SignInForm />} />
-              <Route path='signupform' element={<SignUpForm />} />
-              <Route path='home' element={<Home />} />
-              <Route path='success' element={<Success />} />
-              <Route path='cancel' element={<Cancel />} />
-              <Route path='shirts' element={<Shirts />} />
-              <Route path='pants' element={<Pants />} />
-              <Route path='shoes' element={<Shoes />} />
-              <Route path='checkout' element={<Checkout />} />
-            </Routes>
+            <Header currentUser={currentUser}>
+              <Routes>
+                <Route index path='signin' element={<SignIn />} />
+                <Route path='signinform' element={<SignInForm />} />
+                <Route path='signupform' element={<SignUpForm />} />
+                <Route path='home' element={<Home />} />
+                <Route path='success' element={<Success />} />
+                <Route path='cancel' element={<Cancel />} />
+                <Route path='shirts' element={<Shirts />} />
+                <Route path='pants' element={<Pants />} />
+                <Route path='shoes' element={<Shoes />} />
+                <Route path='checkout' element={<Checkout />} />
+              </Routes>
+            </Header>
           </AuthProvider>
         </BrowserRouter>
       </CartProvider>
