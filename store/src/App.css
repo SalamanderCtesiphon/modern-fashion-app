@@ -38,13 +38,21 @@
 
 .link-list {
   display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  height: auto;
 }
 
-.link {
+.link.a {
   list-style: none;
   margin: 0 2em;
   cursor: pointer;
   display: flex;
+}
+
+.link:hover,
+.link.active {
+  border-bottom: 1px solid white;
 }
 
 .link-tag {
@@ -64,7 +72,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 40vw;
+  width: 45vw;
   height: auto;
   padding-right: 5em;
 }
