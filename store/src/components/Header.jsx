@@ -3,7 +3,6 @@ import { auth } from '../config/firebase'
 import { signOut } from 'firebase/auth'
 import { CartContext } from '../pages/CartContext'
 import logo from '../icons/logo-png.png'
-import { NavLink } from 'react-router-dom'
 
 function Header({currentUser}) {
 
@@ -25,13 +24,11 @@ function Header({currentUser}) {
       </div>
      <div className="right-side">
      <div className="right-container">
-        <nav>
-          <ul className="link-list">
-            <li className="link"><NavLink className='link-tag' to={'/shirts'}>SHIRTS</NavLink></li>
-            <li className="link"><NavLink className='link-tag' to={'pants'}>PANTS</NavLink></li>
-            <li className="link"><NavLink className='link-tag' to={'shoes'}>SHOES</NavLink></li>        
-          </ul>
-        </nav>
+        <ul className="link-list">
+          <li className="link"><a className='link-tag' href="shirts">SHIRTS</a></li>
+          <li className="link"><a className='link-tag' href="pants">PANTS</a></li>
+          <li className="link"><a className='link-tag' href="shoes">SHOES</a></li>        
+        </ul>
       </div>
       <div className="utility-container">
         <a className='link-tag' href="checkout">CHECKOUT</a>
