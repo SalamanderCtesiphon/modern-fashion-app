@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { auth } from '../config/firebase'
 import { signOut } from 'firebase/auth'
 import { CartContext } from '../pages/CartContext'
+import logo from '../icons/logo-png.png'
 
 function Header({currentUser}) {
 
@@ -19,10 +20,9 @@ function Header({currentUser}) {
   return (
     <div className='header'>
       <div className="left-container">
-        <div className="icon-holder"><a href="home">ICON</a></div>
-        {currentUser ? <h3 className="title">Current User</h3> : <h3 className="title">MODERN FASHION</h3>}
+        <div className="icon-holder"><a href="home"><img src={logo} alt="company logo" id='logo' /></a></div>
+        {currentUser ? <h3 className="title">Current User</h3> : <h2 className="title">COFFEE IMPORTS</h2>}
       </div>
-      {currentUser ? <button onClick={() => logout()}>Logout</button> : <button><a href='signin'>Sign in</a></button>}
       <div className="right-container">
         <ul className="link-list">
           <li className="link"><a className='link-tag' href="shirts">SHIRTS</a></li>
@@ -39,7 +39,8 @@ function Header({currentUser}) {
           </li>
           
         </ul>
-        
+        {currentUser ? <button id='log-in-btn' onClick={() => logout()}>Logout</button> : <button><a href='signin'>Sign in</a></button>}
+      
       </div>
     </div>
   )
