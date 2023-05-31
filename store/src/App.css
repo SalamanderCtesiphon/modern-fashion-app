@@ -21,6 +21,12 @@
   color: white;
 }
 
+#logo {
+  height: 5em;
+  width: auto;
+  border-radius: 50%;
+}
+
 .left-container {
   display: flex;
   align-items: center;
@@ -48,6 +54,15 @@ a {
 
 .link-tag:hover {
   color: gray;
+}
+
+.right-container {
+  display: flex;
+  align-items: center;
+}
+
+#log-in-btn {
+  height: fit-content;
 }
 
 /* Sign In page */
