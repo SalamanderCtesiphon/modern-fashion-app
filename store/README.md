@@ -18,3 +18,4 @@ Some of the technologies utilized in this application include:
 - Stipe for payment processing
 - Node JS for the payment server
 - Enviromental variable file for storing API keys
+- CSS custom properties
