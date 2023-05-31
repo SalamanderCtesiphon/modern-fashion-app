@@ -16,9 +16,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2em;
+  padding: .5em;
   background-color: var(--main-dark-color);
   color: white;
+}
+
+.icon-holder {
+  padding-left: 5em;
 }
 
 #logo {
@@ -56,9 +60,25 @@ a {
   color: gray;
 }
 
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  height: auto;
+  padding-right: 5em;
+}
+
 .right-container {
   display: flex;
   align-items: center;
+}
+
+.utility-container {
+  display: flex;
+  width: 10vw;
+  height: auto;
+  justify-content: space-between;
 }
 
 #log-in-btn {
