@@ -1,3 +1,11 @@
+:root {
+  --main-dark-color: #1e000e;
+  --second-dark-color: #823038;
+  --lt-color: #deba6f;
+  --second-lt-color: #e5f77d;
+  --ter-lt-color: #f4f7be;
+}
+
 .App {
   box-sizing: border-box;
 }
@@ -9,7 +17,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2em;
-  background-color: rgb(5, 5, 52);
+  background-color: var(--main-dark-color);
   color: white;
 }
 
