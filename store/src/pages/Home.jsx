@@ -1,10 +1,19 @@
 import React from 'react'
 import './Home.css'
+import beans from '../images/coffee-beans.jpg'
 
 function Home() {
   return (
     <div className='home-page'>
-      <h1>Welcome to the home page</h1>
+      <h1 className='banner'>Welcome to Coffee Importers</h1>
+      <div className="display">
+        <img id='coffee-beans' src={beans} alt="coffee beans" />
+        <div className='text-card'>
+          <h3>Thank you for taking the time to visit us here at Coffee Importers. We pride ourselves on bringing our clients the absolute premium coffee beans from around the globe.</h3>
+          <br />
+          <h3>Our buyers meticulously search farmer's markets in the coffee growing regions of the world, to bring to you the highest quality free-trade fair-practice coffees in existence.</h3>
+        </div>
+        </div>
     </div>
   )
 }
