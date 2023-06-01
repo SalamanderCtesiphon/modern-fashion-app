@@ -36,7 +36,8 @@ function Header({currentUser}) {
         </div>
       </div>
       <div className="utility-container">
-        <a className='link-tag' href="checkout">CHECKOUT</a>
+        <div className="shopping-container">
+          <a className='link-tag' href="checkout">CHECKOUT</a>
           <div className='shopping-cart'>
             { productsCount > 0 ? 
               <div className='product-count'>{productsCount}</div>
@@ -44,6 +45,7 @@ function Header({currentUser}) {
               <></>
             }
           </div>
+        </div>
         {currentUser ? <button id='log-in-btn' onClick={() => logout()}>Logout</button> : <button><a href='signin'>Sign in</a></button>}
       </div>
      </div>
