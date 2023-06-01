@@ -47,9 +47,8 @@ function Header({currentUser}) {
             </div>
           </div>
           {currentUser ? <div className='log-in-btn link-tag' onClick={() => logout()}>LOGOUT</div> 
-              : 
-            <div className='log-in-btn link-tag' href='signin'>Sign in</div>
-          }
+            : 
+            <div className='log-in-btn link-tag'><a href='signin' id='sign-in'>SIGN-IN</a></div>}
         </div>
       </div>
     </div>
