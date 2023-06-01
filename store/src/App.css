@@ -18,6 +18,7 @@
   justify-content: space-between;
   background-color: var(--main-dark-color);
   color: white;
+  padding: .55em 0;
 }
 
 .icon-holder {
@@ -49,17 +50,19 @@
   display: flex;
 }
 
+
 a {
   display: flex;
   align-items: center;
   text-decoration: none;
   color: white;
+  height: 4em;
 }
 
 a:hover,
 a.active {
   color: var(--ter-lt-color);
-  border-bottom: 10px solid var(--ter-lt-color);
+  border-bottom: 5px solid var(--ter-lt-color);
 }
 
 .right-side {
@@ -67,7 +70,7 @@ a.active {
   align-items: center;
   justify-content: space-between;
   width: 45vw;
-  height: auto;
+  height: 4em;
   padding-right: 5em;
 }
 
@@ -78,9 +81,17 @@ a.active {
 
 .utility-container {
   display: flex;
-  width: 10vw;
-  height: auto;
+  width: 15vw;
+  height: 4em;
   justify-content: space-between;
+  align-items: center;
+}
+
+.shopping-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 4em;
 }
 
 #log-in-btn {
@@ -108,6 +119,10 @@ a.active {
   margin-top: 15em;
   padding: 1em;
   border-radius: 1em;
+}
+
+.card a {
+  color: black;
 }
 
 .sign-in { 
