@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { auth } from '../config/firebase'
 import { signOut } from 'firebase/auth'
 import { CartContext } from '../pages/CartContext'
-import logo from '../icons/logo-png.png'
+import logo from '../icons/Coffee.png'
 
 function Header({currentUser}) {
 
@@ -32,7 +32,7 @@ function Header({currentUser}) {
           <div className="link-list">
             <div onClick={() => {console.log('hi')}} className='link-tag'><a className="nav-link" href="shirts">SHIRTS</a></div>
             <div className='link-tag'><a className="nav-link" href="pants">PANTS</a></div>
-            <div className='link-tag'><a className='active nav-link' href="shoes">SHOES</a></div>        
+            <div className='link-tag'><a className='nav-link' href="shoes">SHOES</a></div>        
           </div>
         </div>
         <div className="utility-container">
@@ -46,7 +46,7 @@ function Header({currentUser}) {
               }
             </div>
           </div>
-          {currentUser ? <button id='log-in-btn' onClick={() => logout()}>Logout</button> : <button><a href='signin'>Sign in</a></button>}
+          {currentUser ? <button className='log-in-btn' onClick={() => logout()}>Logout</button> : <button className='log-in-btn'><a href='signin'>Sign in</a></button>}
         </div>
       </div>
     </div>
