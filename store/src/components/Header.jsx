@@ -6,6 +6,9 @@ import logo from '../icons/logo-png.png'
 
 function Header({currentUser}) {
 
+  // create a active state for each link and use that to selectively style the component
+  // write a function that toggles the active class of each link 
+
   const cart = useContext(CartContext)
   const productsCount = cart.items.length
 
@@ -17,6 +20,8 @@ function Header({currentUser}) {
     }
   }
 
+  
+
   return (
     <div className='header'>
       <div className="left-container">
@@ -24,11 +29,11 @@ function Header({currentUser}) {
       </div>
      <div className="right-side">
      <div className="right-container">
-        <ul className="link-list">
-          <li className="link"><a className='link-tag' href="shirts">SHIRTS</a></li>
-          <li className="link"><a className='link-tag' href="pants">PANTS</a></li>
-          <li className="link"><a className='link-tag' href="shoes">SHOES</a></li>        
-        </ul>
+        <div className="link-list">
+          <div onClick={() => {console.log('hi')}} className='link-tag'><a href="shirts">SHIRTS</a></div>
+          <div className='link-tag'><a href="pants">PANTS</a></div>
+          <div className='link-tag'><a className='active' href="shoes">SHOES</a></div>        
+        </div>
       </div>
       <div className="utility-container">
         <a className='link-tag' href="checkout">CHECKOUT</a>
