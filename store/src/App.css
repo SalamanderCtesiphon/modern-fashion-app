@@ -19,23 +19,26 @@
   background-color: var(--main-dark-color);
   color: white;
   padding: .55em 0;
+  height: 4em;
 }
 
 /* left side of header ------------*/
 
 .left-container {
   display: flex;
-  align-items: center;
 }
 
 .icon-holder {
   padding-left: 5em;
+  height: 50px;
+  display: flex;
 }
 
 #logo {
   height: 3.5em;
   width: auto;
   border-radius: 50%;
+  padding-bottom: 1em;
 }
 
 /* right side of header ------------*/
@@ -71,19 +74,28 @@
 .utility-container {
   display: flex;
   width: 15vw;
-  height: 4em;
   justify-content: space-between;
   align-items: center;
 }
 
 .shopping-container {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
-  height: 4em;
+  height: 50px;
 }
 
-a {
+.shopping-cart {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+}
+
+#log-in-btn {
+  height: fit-content;
+  margin-top: 10px
+}
+
+.nav-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -91,17 +103,13 @@ a {
   height: 4em;
 }
 
-a:hover,
-a.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--ter-lt-color);
   border-bottom: 5px solid var(--ter-lt-color);
 }
 
 
-
-#log-in-btn {
-  height: fit-content;
-}
 
 /* Sign In page ------------------------------------------------------------------------*/
 
