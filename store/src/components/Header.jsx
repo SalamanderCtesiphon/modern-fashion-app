@@ -25,14 +25,14 @@ function Header({currentUser}) {
   return (
     <div className='header'>
       <div className="left-container">
-        <div className="icon-holder"><a className="nav-link" href="home"><img src={logo} alt="company logo" id='logo' /></a></div>
+        <div className="icon-holder"><a href="home"><img src={logo} alt="company logo" id='logo' /></a></div>
       </div>
       <div className="right-side">
         <div className="right-container">
           <div className="link-list">
-            <div onClick={() => {console.log('hi')}} className='link-tag'><a className="nav-link" href="shirts">SHIRTS</a></div>
-            <div className='link-tag'><a className="nav-link" href="pants">PANTS</a></div>
-            <div className='link-tag'><a className='nav-link' href="shoes">SHOES</a></div>        
+            <div onClick={() => {console.log('hi')}} className='link-tag'><a className="nav-link" href="shirts">STORE</a></div>
+            <div className='link-tag'><a className="nav-link" href="pants">ABOUT</a></div>
+            <div className='link-tag'><a className='nav-link' href="shoes">CONTACT</a></div>        
           </div>
         </div>
         <div className="utility-container">
@@ -46,7 +46,7 @@ function Header({currentUser}) {
               }
             </div>
           </div>
-          {currentUser ? <button className='log-in-btn' onClick={() => logout()}>Logout</button> : <button className='log-in-btn'><a href='signin'>Sign in</a></button>}
+          {currentUser ? <div className='log-in-btn' onClick={() => logout()}>LOGOUT</div> : <button className='log-in-btn'><a href='signin'>Sign in</a></button>}
         </div>
       </div>
     </div>
