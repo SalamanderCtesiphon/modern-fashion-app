@@ -48,3 +48,16 @@
   line-height: 2em;
   overflow: scroll;
 }
+
+#social {
+  background-color: green;
+  text-decoration: none;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+#social:hover {
+  background-color: white;
+  color: green;
+}
