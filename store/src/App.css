@@ -8,6 +8,7 @@
 
 .App {
   box-sizing: border-box;
+  letter-spacing: .5em;
 }
 
 /* header styling ------------------------------------------------------------------------*/
@@ -35,10 +36,11 @@
 }
 
 #logo {
-  height: 3.5em;
+  height: 15em;
   width: auto;
   border-radius: 50%;
   padding-bottom: 1em;
+  margin-top: 5em;
 }
 
 /* right side of header ------------*/
@@ -73,7 +75,7 @@
 
 .utility-container {
   display: flex;
-  width: 15vw;
+  width: 20vw;
   justify-content: space-between;
   align-items: center;
 }
@@ -90,7 +92,7 @@
   padding-top: 12px;
 }
 
-#log-in-btn {
+.log-in-btn {
   height: fit-content;
   margin-top: 10px
 }
