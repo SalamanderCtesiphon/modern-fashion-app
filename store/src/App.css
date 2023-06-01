@@ -87,7 +87,7 @@
 
 .product-count {
   position: absolute;
-  background-color: rgba(63, 200, 63, 0.776);
+  background-color: rgb(153, 223, 153);
   border-radius: 50%;
   padding-left: 8px;
   color: black;
@@ -109,7 +109,7 @@
   align-items: center;
   width: 10vw;
   height: 5em;
-  color: rgb(63, 200, 63);
+  color: white;
   text-decoration: none;
 }
 
