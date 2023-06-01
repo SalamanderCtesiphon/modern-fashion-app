@@ -8,14 +8,14 @@ import Home from './pages/Home';
 import Success from './pages/Success';
 import Cancel from './pages/Cancel';
 import Shirts from './pages/Shirts';
-import Pants from './pages/Pants';
-import Shoes from './pages/Shoes';
+import About from './pages/About';
 import Checkout from './pages/Checkout';
 import SignIn from './pages/SignIn';
 import SignInForm from './pages/SignInForm';
 import SignUpForm from './pages/SignUpForm';
 import { AuthProvider } from './AuthContext';
 import CartProvider from './pages/CartContext';
+import Contact from './pages/Contact';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
@@ -40,8 +40,8 @@ function App() {
               <Route path='success' element={<Success />} />
               <Route path='cancel' element={<Cancel />} />
               <Route path='shirts' element={<Shirts />} />
-              <Route path='pants' element={<Pants />} />
-              <Route path='shoes' element={<Shoes />} />
+              <Route path='about' element={<About />} />
+              <Route path='contact' element={<Contact />} />
               <Route path='checkout' element={<Checkout />} />
             </Routes>
           </AuthProvider>
