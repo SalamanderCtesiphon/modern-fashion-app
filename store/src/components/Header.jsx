@@ -27,28 +27,28 @@ function Header({currentUser}) {
       <div className="left-container">
         <div className="icon-holder"><a href="home"><img src={logo} alt="company logo" id='logo' /></a></div>
       </div>
-     <div className="right-side">
-     <div className="right-container">
-        <div className="link-list">
-          <div onClick={() => {console.log('hi')}} className='link-tag'><a href="shirts">SHIRTS</a></div>
-          <div className='link-tag'><a href="pants">PANTS</a></div>
-          <div className='link-tag'><a className='active' href="shoes">SHOES</a></div>        
-        </div>
-      </div>
-      <div className="utility-container">
-        <div className="shopping-container">
-          <a className='link-tag' href="checkout">CHECKOUT</a>
-          <div className='shopping-cart'>
-            { productsCount > 0 ? 
-              <div className='product-count'>{productsCount}</div>
-              :
-              <></>
-            }
+      <div className="right-side">
+        <div className="right-container">
+          <div className="link-list">
+            <div onClick={() => {console.log('hi')}} className='link-tag'><a href="shirts">SHIRTS</a></div>
+            <div className='link-tag'><a href="pants">PANTS</a></div>
+            <div className='link-tag'><a className='active' href="shoes">SHOES</a></div>        
           </div>
         </div>
-        {currentUser ? <button id='log-in-btn' onClick={() => logout()}>Logout</button> : <button><a href='signin'>Sign in</a></button>}
+        <div className="utility-container">
+          <div className="shopping-container">
+            <a className='link-tag' href="checkout">CHECKOUT</a>
+            <div className='shopping-cart'>
+              { productsCount > 0 ? 
+                <div className='product-count'>{productsCount}</div>
+               :
+                <></>
+              }
+            </div>
+          </div>
+          {currentUser ? <button id='log-in-btn' onClick={() => logout()}>Logout</button> : <button><a href='signin'>Sign in</a></button>}
+        </div>
       </div>
-     </div>
     </div>
   )
 }
