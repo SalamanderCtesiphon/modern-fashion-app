@@ -3,7 +3,7 @@
   --second-dark-color: #823038;
   --lt-color: #deba6f;
   --second-lt-color: #e5f77d;
-  --ter-lt-color: #f4f7be;
+  --ter-lt-color: rgb(63, 200, 63);
 }
 
 .App {
@@ -32,6 +32,7 @@
   height: 12em;
   width: auto;
   padding-bottom: 1em;
+  z-index: 10;
 }
 
 /* right side of header ------------*/
@@ -40,7 +41,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: auto;
+  width: 45vw;
   height: 4em;
   padding-right: 5em;
 }
@@ -75,6 +76,7 @@
   display: flex;
   justify-content: flex-start;
   height: 50px;
+  width: 30em;
 }
 
 .shopping-cart {
@@ -83,20 +85,32 @@
   padding-top: 12px;
 }
 
-.log-in-btn {
-  height: fit-content;
-  margin-top: .6em;
-  color: rgb(63, 200, 63);
-  cursor: pointer;
-  padding: 3px;
+.product-count {
+  position: absolute;
+  background-color: rgba(63, 200, 63, 0.776);
+  border-radius: 50%;
+  padding-left: 8px;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.log-in-btn:hover {
-  margin-top: 10px;
-  border: 1px solid var(--second-lt-color);
-  border-radius: 3px;
-  padding: 3px;
+.log-in-btn {
+  height: 4em;
+  margin-top: .7em;
+  color: rgb(63, 200, 63);
+  cursor: pointer;
 }
+
+#sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 5em;
+}
+
 
 .nav-link {
   display: flex;
@@ -106,10 +120,20 @@
   height: 4em;
 }
 
+.log-in-btn {
+  display: flex;
+  align-items: center;
+  color: rgb(63, 200, 63);
+}
+
+.log-in-btn:hover {
+  color: rgb(5, 245, 5);
+}
+
 .nav-link:hover,
 .nav-link.active {
-  color: var(--ter-lt-color);
-  border-bottom: 5px solid var(--ter-lt-color);
+  color: rgb(63, 200, 63);
+  border-bottom: 5px solid rgb(63, 200, 63);
 }
 
 
@@ -124,6 +148,7 @@
   width: 100vw;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.781);
+  z-index: -1;
 }
 
 .page .card {
