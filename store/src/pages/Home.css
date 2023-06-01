@@ -26,9 +26,12 @@
 }
 
 #coffee-beans {
-  height: 70vh;
+  margin-left: 3em;
+  height: 75vh;
   width: auto;
   border-radius: 49%;
+  opacity: 80%;
+  box-shadow: 20px 20px 20px 5px rgba(0, 0, 0, 0.709);
 }
 
 .display {
