@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-/* header styling */
+/* header styling ------------------------------------------------------------------------*/
 
 .header { 
   display: flex;
@@ -19,6 +19,13 @@
   background-color: var(--main-dark-color);
   color: white;
   padding: .55em 0;
+}
+
+/* left side of header ------------*/
+
+.left-container {
+  display: flex;
+  align-items: center;
 }
 
 .icon-holder {
@@ -31,7 +38,18 @@
   border-radius: 50%;
 }
 
-.left-container {
+/* right side of header ------------*/
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45vw;
+  height: 4em;
+  padding-right: 5em;
+}
+
+.right-container {
   display: flex;
   align-items: center;
 }
@@ -50,35 +68,6 @@
   display: flex;
 }
 
-
-a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  height: 4em;
-}
-
-a:hover,
-a.active {
-  color: var(--ter-lt-color);
-  border-bottom: 5px solid var(--ter-lt-color);
-}
-
-.right-side {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 45vw;
-  height: 4em;
-  padding-right: 5em;
-}
-
-.right-container {
-  display: flex;
-  align-items: center;
-}
-
 .utility-container {
   display: flex;
   width: 15vw;
@@ -94,11 +83,27 @@ a.active {
   height: 4em;
 }
 
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  height: 4em;
+}
+
+a:hover,
+a.active {
+  color: var(--ter-lt-color);
+  border-bottom: 5px solid var(--ter-lt-color);
+}
+
+
+
 #log-in-btn {
   height: fit-content;
 }
 
-/* Sign In page */
+/* Sign In page ------------------------------------------------------------------------*/
 
 .page {
   display: flex;
