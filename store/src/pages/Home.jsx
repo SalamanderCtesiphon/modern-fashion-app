@@ -11,7 +11,7 @@ function Home() {
         <div className='text-card'>
           <h3>Thank you for taking the time to visit us here at Coffee Importers. We pride ourselves on bringing our clients the absolute premium coffee beans from around the globe.</h3>
           <br />
-          <h3>Our buyers meticulously search farmer's markets in the coffee growing regions of the world, to bring to you the highest quality free-trade fair-practice coffees in existence.</h3>
+          <h3>Our buyers meticulously search farmer's markets in the world's coffee growing regions to bring you the highest quality free-trade fair-practice coffee in existence.</h3>
         </div>
         </div>
     </div>
