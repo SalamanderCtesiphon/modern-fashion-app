@@ -16,7 +16,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: .5em;
   background-color: var(--main-dark-color);
   color: white;
 }
@@ -26,7 +25,7 @@
 }
 
 #logo {
-  height: 5em;
+  height: 3.5em;
   width: auto;
   border-radius: 50%;
 }
@@ -40,32 +39,27 @@
   display: flex;
   justify-content: space-between;
   width: 20vw;
-  height: auto;
+  height: 50px;
 }
 
-.link.a {
-  list-style: none;
+.link-tag {
+  color: white;
   margin: 0 2em;
   cursor: pointer;
   display: flex;
 }
 
-.link:hover,
-.link.active {
-  border-bottom: 1px solid white;
-}
-
-.link-tag {
+a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
 }
 
-a {
-  text-decoration: none;
-}
-
-.link-tag:hover {
-  color: gray;
+a:hover,
+a.active {
+  color: var(--ter-lt-color);
+  border-bottom: 10px solid var(--ter-lt-color);
 }
 
 .right-side {
