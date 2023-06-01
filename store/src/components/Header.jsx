@@ -31,8 +31,8 @@ function Header({currentUser}) {
         <div className="right-container">
           <div className="link-list">
             <div onClick={() => {console.log('hi')}} className='link-tag'><a className="nav-link" href="shirts">STORE</a></div>
-            <div className='link-tag'><a className="nav-link" href="pants">ABOUT</a></div>
-            <div className='link-tag'><a className='nav-link' href="shoes">CONTACT</a></div>        
+            <div className='link-tag'><a className="nav-link" href="about">ABOUT</a></div>
+            <div className='link-tag'><a className='nav-link' href="contact">CONTACT</a></div>        
           </div>
         </div>
         <div className="utility-container">
@@ -46,7 +46,10 @@ function Header({currentUser}) {
               }
             </div>
           </div>
-          {currentUser ? <div className='log-in-btn' onClick={() => logout()}>LOGOUT</div> : <button className='log-in-btn'><a href='signin'>Sign in</a></button>}
+          {currentUser ? <div className='log-in-btn link-tag' onClick={() => logout()}>LOGOUT</div> 
+              : 
+            <div className='log-in-btn link-tag' href='signin'>Sign in</div>
+          }
         </div>
       </div>
     </div>
