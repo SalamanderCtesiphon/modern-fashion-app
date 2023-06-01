@@ -1,4 +1,43 @@
+:root {
+  --main-dark-color: #1e000e;
+  --second-dark-color: #823038;
+  --lt-color: #deba6f;
+  --second-lt-color: #e5f77d;
+  --ter-lt-color: #f4f7be;
+}
+
+
 .home-page {
   display: flex;
   justify-content: center;
+  background-image: url(../images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 91.5vh;
+  flex-direction: column;
+  padding: 0 6em;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+#coffee-beans {
+  height: 80vh;
+  width: auto;
+  border-radius: 49%;
+}
+
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-card {
+  background-color: rgba(255, 255, 255, 0.635);
+  padding: 4em;
+  border-radius: 1em;
+  width: 40vw;
 }
