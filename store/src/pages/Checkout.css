@@ -1,0 +1,62 @@
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+.check-out-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 1em;
+  background-image: url(../images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 94vh;
+}
+
+.check-out-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  width: 45vw;
+  margin: 2em 0;
+  background-color: rgba(255, 255, 255, 0.697);
+  border-radius: 5px;
+}
+
+.check-out-image {
+  height: 8em;
+  width: 7em;
+  object-fit: cover;
+}
+
+.cc-sub-section-three {
+  font-weight: bolder;
+}
+
+.dlt-btn {
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dlt-btn:hover {
+  padding: 4px 6px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.rtn-btn {
+  width: 19em;
+  display: flex;
+  justify-content: space-between;
+}
+
+#link-back {
+  color: black;
+  text-decoration: none;
+  
+}
