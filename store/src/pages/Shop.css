@@ -1,6 +1,9 @@
 .shop-page {
   display: flex;
   flex-direction: column;
+  background-image: url(../images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .product-display {
@@ -32,8 +35,52 @@
 }
 
 .adjust-item {
+  background-color: white;
+  padding: .5em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 12em;
+  width: 13em;
+  border-radius: 6px;
+}
+
+.add-btn {
+  padding: .5em;
+  background-color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.right-actions {
+  height: 6em;
+  width: 20em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.delete-btn {
+  background-color: white;
+  padding: .5em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover,
+.add-btn:hover {
+  background-color: rgba(199, 189, 189, 0.622);
+  border: 1px solid black;
+}
+
+.increment {
+  padding: 3px;
+  padding-left: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;border-radius: 50%;
+}
+.increment:hover {
+  background-color: rgba(199, 189, 189, 0.622);
 }
