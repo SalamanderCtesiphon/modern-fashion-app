@@ -33,7 +33,7 @@ function App() {
         <BrowserRouter>
           <AuthProvider value={{currentUser}}>
             <Routes>
-              <Route index path='signin' element={<SignIn />} />
+              <Route index path='/' element={<SignIn />} />
               <Route path='signinform' element={<SignInForm />} />
               <Route path='signupform' element={<SignUpForm />} />
               <Route path='home' element={<Home />} />
