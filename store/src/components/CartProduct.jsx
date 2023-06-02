@@ -17,8 +17,8 @@ function CartProduct(props) {
 
   return (
     <>
-      <div className='checkout-card'>
-        <img src={productData.image} alt="product" className='checkout-image'></img>
+      <div className='check-out-card'>
+        <img src={productData.image} alt="product" className='check-out-image'></img>
         <div className='cc-sub-section'>
           <div>Product Name:</div>
           <h3>{productData.title}</h3>
@@ -30,7 +30,7 @@ function CartProduct(props) {
           <div>Sub Total:</div>
           <p>{ USDollar.format(subTotal)}</p>
         </div>
-        <button className="dlt-btn" onClick={() => cart.deleteFromCart(id)}>Remove</button>
+        <div className="dlt-btn" onClick={() => cart.deleteFromCart(id)}>Remove</div>
       </div>
     </>
   )
