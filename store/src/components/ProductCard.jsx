@@ -10,29 +10,31 @@ function ProductCard(props) {
   return (
 
     <div className='product-card'>
-      { productQuantity > 0 ?
-        <button onClick={() => cart.deleteFromCart(product.id)} >delete</button>  
-        :
-        <></>
-      }
       <img src={product.image} alt='product' className='product-image'></img>
       <h3 className='title-container'>{product.title}</h3>
       <p>${product.price}</p>
+      <div className="right-actions">
       { productQuantity > 0 ?
         <>
           <div className='adjust-item'>
-            <button className='increment' onClick={() => cart.removeOneFromCart(product.id)} >-</button>
+            <div className='increment' onClick={() => cart.removeOneFromCart(product.id)} >-</div>
             <div>
               In cart: {productQuantity}
             </div>
-            <button className='increment' onClick={() => cart.addOneToCart(product.id)} >+</button>
+            <div className='increment' onClick={() => cart.addOneToCart(product.id)} >+</div>
           </div>
+          { productQuantity > 0 ?
+              <div className='delete-btn' onClick={() => cart.deleteFromCart(product.id)} >delete</div>  
+              :
+              <></>
+            }
         </> 
         :
         <>
-         <button className='nav-link' onClick={() => cart.addOneToCart(product.id)} >Add One to Cart</button>
+         <div className='add-btn' onClick={() => cart.addOneToCart(product.id)} >Add One to Cart</div>
         </>
       }
+      </div>
     </div>
   )
 }
