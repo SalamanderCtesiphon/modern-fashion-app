@@ -37,6 +37,12 @@
 
 /* right side of header ------------*/
 
+.page {
+  background-image: url(./images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .right-side {
   display: flex;
   align-items: center;
