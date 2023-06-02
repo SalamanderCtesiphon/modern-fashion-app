@@ -14,7 +14,7 @@ function Shop() {
       <h1>Shop</h1>
       <div className="product-display">
         {tempArray.map((product, idx) => (
-          <div className="product-card" key={product.id}>
+          <div key={product.id}>
             <ProductCard product={product}></ProductCard>
           </div>
         ))}
