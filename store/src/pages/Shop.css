@@ -1,0 +1,24 @@
+.shop-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 100vw;
+}
+
+.product-card {
+  height: 15em;
+  display: flex;
+  align-items: center;
+}
+
+.product-image {
+  height: 10em;
+  width: 6em;
+  object-fit: cover;
+}
