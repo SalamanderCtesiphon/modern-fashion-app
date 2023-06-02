@@ -12,13 +12,28 @@
 }
 
 .product-card {
-  height: 15em;
+  height: 12em;
+  width: 60em;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 1em;
+}
+
+.title-container {
+  width: 20em;
 }
 
 .product-image {
-  height: 10em;
-  width: 6em;
+  height: 8em;
+  width: 7em;
   object-fit: cover;
+}
+
+.adjust-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 12em;
 }
