@@ -98,20 +98,19 @@
 
 .log-in-btn {
   height: 4em;
+  width: 15em;
   margin-top: .7em;
   color: rgb(63, 200, 63);
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
-#sign-in {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10vw;
-  height: 5em;
-  color: white;
+a {
   text-decoration: none;
+  color: white;
 }
+
 
 
 .nav-link {
@@ -124,12 +123,6 @@
   height: 4em;
 }
 
-.log-in-btn {
-  display: flex;
-  align-items: center;
-  color: rgb(63, 200, 63);
-}
-
 .log-in-btn:hover {
   color: rgb(5, 245, 5);
 }
@@ -138,7 +131,7 @@
 .nav-link.active {
   color: rgb(63, 200, 63);
   border-bottom: 5px solid rgb(63, 200, 63);
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 7px;
 }
 
 .success {
