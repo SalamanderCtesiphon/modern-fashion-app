@@ -1,6 +1,7 @@
 import React from 'react'
 import { productsArray } from '../utility/inventory'
 import ProductCard from '../components/ProductCard'
+import './Shop.css'
 
 
 function Shop() {
