@@ -21,7 +21,7 @@ const productsArray = [
     title: 'Sunglasses',
     price: 9.99,
     image: shoes,
-    category: 'footware'
+    category: 'tops'
   },
   {
     id: 'price_1NDUsuALqsWPo0rqXmagBcXk',
