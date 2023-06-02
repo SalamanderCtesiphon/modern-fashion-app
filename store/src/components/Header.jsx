@@ -30,7 +30,7 @@ function Header({currentUser}) {
       <div className="right-side">
         <div className="right-container">
           <div className="link-list">
-            <div onClick={() => {console.log('hi')}} className='link-tag'><a className="nav-link" href="shirts">STORE</a></div>
+            <div onClick={() => {console.log('hi')}} className='link-tag'><a className="nav-link" href="shop">STORE</a></div>
             <div className='link-tag'><a className="nav-link" href="about">ABOUT</a></div>
             <div className='link-tag'><a className='nav-link' href="contact">CONTACT</a></div>        
           </div>
