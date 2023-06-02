@@ -1,5 +1,6 @@
 import React, { useContext} from 'react'
 import { CartContext } from '../pages/CartContext'
+import '../pages/Shop.css'
 
 function ProductCard(props) {
   const product = props.product
