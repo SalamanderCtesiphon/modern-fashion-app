@@ -3,6 +3,8 @@ import { CartContext } from './CartContext'
 import CartProduct from '../components/CartProduct'
 import Icon from '@mdi/react';
 import { mdiArrowLeftBold } from '@mdi/js';
+import './Checkout.css'
+
 
 
 
@@ -35,19 +37,19 @@ function CheckOut() {
   
 
   return (
-    <div className='checkout-page'>
+    <div className='check-out-page'>
          {productsCount > 0 ?
             <>
-              <h3 className='page-head'><a id="link-back" href='/categories'><Icon path={mdiArrowLeftBold} size={1} />Return to shopping</a></h3>
+              <h3 className='dlt-btn '><a className='rtn-btn' id="link-back" href='/categories'><Icon path={mdiArrowLeftBold} size={1} />Return to shopping</a></h3>
               {cart.items.map((currentProduct, idx) => (
                 <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
               ))}
 
               <h1 className='total'>Total: {USDollar.format(cartTotal)}</h1>
 
-              <button onClick={() => paymentProcessor()} className='buy-btn'>
+              <div onClick={() => paymentProcessor()} className='dlt-btn'>
                 Purchase Items!
-              </button>
+              </div>
             </>
           :
           <>
