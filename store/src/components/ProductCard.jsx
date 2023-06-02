@@ -16,7 +16,7 @@ function ProductCard(props) {
         <></>
       }
       <img src={product.image} alt='product' className='product-image'></img>
-      <h3>{product.title}</h3>
+      <h3 className='title-container'>{product.title}</h3>
       <p>${product.price}</p>
       { productQuantity > 0 ?
         <>
