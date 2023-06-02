@@ -7,7 +7,7 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import Success from './pages/Success';
 import Cancel from './pages/Cancel';
-import Shirts from './pages/Shirts';
+import Shop from './pages/Shop';
 import About from './pages/About';
 import Checkout from './pages/Checkout';
 import SignIn from './pages/SignIn';
@@ -39,7 +39,7 @@ function App() {
               <Route path='home' element={<Home />} />
               <Route path='success' element={<Success />} />
               <Route path='cancel' element={<Cancel />} />
-              <Route path='shirts' element={<Shirts />} />
+              <Route path='shop' element={<Shop />} />
               <Route path='about' element={<About />} />
               <Route path='contact' element={<Contact />} />
               <Route path='checkout' element={<Checkout />} />
