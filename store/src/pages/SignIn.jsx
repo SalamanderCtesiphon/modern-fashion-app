@@ -5,11 +5,11 @@ function SignIn() {
     <div className='page'>
       <div className='card'>
         <h3>Welcome to our site!</h3>
-        <a href="signinform">Sign In</a>
+        <a className='links' href="signinform">Sign In</a>
         <p>or</p>
-        <a href="home">Continues as a guest</a>
+        <a className='links' href="home">Continues as a guest</a>
         <p>Not a member?</p>
-        <a href="signupform">Sign Up!</a>
+        <a className='links' href="signupform">Sign Up!</a>
       </div>
     </div>
   )
