@@ -1,9 +1,6 @@
 .shop-page {
   display: flex;
   flex-direction: column;
-  background-image: url(../images/mountains.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .product-display {
