@@ -29,20 +29,18 @@
   background-color: var(--main-dark-color);
   color: white;
   padding: .55em 0;
-  min-height: 6vh;
-  max-height: 8vh;
   width: 100%;
 }
 
 /* left side of header ------------*/
 
 #logo {
-  margin-top: 5em;
-  margin-left: 5em;
+  position: absolute;
+  top: 1vh;
+  margin-left: 3em;
   border-radius: 50%;
-  min-height: 11em;
+  max-height: 23vh;
   width: auto;
-  padding-bottom: 1em;
   z-index: 10;
 }
 
@@ -52,21 +50,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 50vw;
-  min-height: 4em;
   padding-right: 5em;
 }
 
 .right-container {
-  display: flex;
-  align-items: center;
+  padding: 1.5em 0;
+ 
 }
 
 .link-list {
   display: flex;
   justify-content: space-between;
   width: auto;
-  min-height: 50px;
 }
 
 .link-tag {
@@ -86,19 +81,15 @@
 .shopping-container {
   display: flex;
   justify-content: flex-start;
-  min-height: 50px;
   width: 20em;
 }
 
 .shopping-cart {
   display: flex;
   align-items: center;
-  padding-top: 12px;
 }
 
 .product-count {
-  position: absolute;
-  left: 84.3vw;
   background-color: rgb(153, 223, 153);
   border-radius: 50%;
   padding-left: 8px;
@@ -109,13 +100,9 @@
 }
 
 .log-in-btn {
-  min-height: 4em;
   width: 15em;
-  margin-top: .7em;
   color: rgb(63, 200, 63);
   cursor: pointer;
-  display: flex;
-  align-items: center;
 }
 
 a {
@@ -132,7 +119,6 @@ a {
   justify-content: center;
   text-decoration: none;
   color: white;
-  height: 4em;
 }
 
 .log-in-btn:hover,
