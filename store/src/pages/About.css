@@ -1,0 +1,13 @@
+.about-page {
+  background-image: url(../images/mountains.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 92vh;
+  margin: 0;
+}
+.about-header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
