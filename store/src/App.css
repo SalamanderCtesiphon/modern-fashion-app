@@ -38,7 +38,9 @@
 /* right side of header ------------*/
 
 .page {
-  background-image: url(./images/mountains.jpg);
+  background-image: 
+    linear-gradient(black, rgba(0, 0, 0, 0.495)),
+    url(./images/mountains.jpg);
   background-size: cover;
   background-position: center;
 }
