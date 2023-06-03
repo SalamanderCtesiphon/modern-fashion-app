@@ -13,7 +13,8 @@
   background-image: url(../images/mountains.jpg);
   background-size: cover;
   background-position: center;
-  height: 88.3vh;
+  min-height: 88.3vh;
+  width: auto;
   flex-direction: column;
   padding: 1em 6em;
 }
@@ -63,4 +64,13 @@
 #social:hover {
   background-color: white;
   color: green;
+}
+
+/* about page___------------------------------------------------- */
+
+.about-header {
+  width: 100 vw;
+  display: flex;
+  margin-top: -3em;
+  justify-content: center;
 }
