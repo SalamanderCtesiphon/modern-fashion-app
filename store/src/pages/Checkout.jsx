@@ -40,7 +40,7 @@ function CheckOut() {
     <div className='check-out-page'>
          {productsCount > 0 ?
             <>
-              <h3 className='dlt-btn '><a className='rtn-btn' id="link-back" href='/categories'><Icon path={mdiArrowLeftBold} size={1} />Return to shopping</a></h3>
+              <h3 className='dlt-btn '><a className='rtn-btn' id="link-back" href='/shop'><Icon path={mdiArrowLeftBold} size={1} />Return to shopping</a></h3>
               {cart.items.map((currentProduct, idx) => (
                 <CartProduct key={idx} id={currentProduct.id} quantity={currentProduct.quantity}></CartProduct>
               ))}
@@ -53,8 +53,10 @@ function CheckOut() {
             </>
           :
           <>
+          
           <h1>There Are No Items In Your Cart</h1> 
-          <a className="navLinks" href='categories'>Back to Shopping</a>
+          <h3 className='dlt-btn '><a className='rtn-btn' id="link-back" href='/shop'><Icon path={mdiArrowLeftBold} size={1} />Return to shopping</a></h3>
+              
           </> 
           }
     </div>
