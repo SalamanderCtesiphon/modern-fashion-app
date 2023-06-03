@@ -10,13 +10,13 @@
 .home-page {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   background-image: url(../images/mountains.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 88.3vh;
+  height: 92.2vh;
   width: auto;
-  flex-direction: column;
-  padding: 1em 6em;
+  padding: 0 6em;
 }
 
 .banner {
@@ -66,11 +66,3 @@
   color: green;
 }
 
-/* about page___------------------------------------------------- */
-
-.about-header {
-  width: 100 vw;
-  display: flex;
-  margin-top: -3em;
-  justify-content: center;
-}
