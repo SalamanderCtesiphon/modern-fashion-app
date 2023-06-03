@@ -30,13 +30,13 @@ function Header({currentUser}) {
       <div className="right-side">
         <div className="right-container">
           <div className="link-list">
-            <div onClick={() => {console.log('hi')}} className='link-tag'><a className="nav-link" href="shop">STORE</a></div>
-            <div className='link-tag'><a className="nav-link" href="about">ABOUT</a></div>
-            <div className='link-tag'><a className='nav-link' href="contact">CONTACT</a></div>        
+            <div><a className="nav-link link-tag" href="shop">STORE</a></div>
+            <div><a className="nav-link link-tag" href="about">ABOUT</a></div>
+            <div><a className='nav-link link-tag' href="contact">CONTACT</a></div>        
           </div>
         </div>
         <div className="utility-container">
-          <div className="shopping-container">
+          <div className="shopping-container link-list">
             <a className='link-tag nav-link' href="checkout">CHECKOUT</a>
             <div className='shopping-cart'>
               { productsCount > 0 ? 
