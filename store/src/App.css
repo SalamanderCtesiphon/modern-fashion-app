@@ -17,6 +17,7 @@
     url(./images/mountains.jpg);
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
 }
 
 /* header styling ------------------------------------------------------------------------*/
@@ -28,8 +29,8 @@
   background-color: var(--main-dark-color);
   color: white;
   padding: .55em 0;
-  height: 6vh;
-  min-height: 60px;
+  min-height: 6vh;
+  max-height: 8vh;
   width: auto;
 }
 
@@ -39,7 +40,7 @@
   margin-top: 5em;
   margin-left: 5em;
   border-radius: 50%;
-  height: 11em;
+  min-height: 11em;
   width: auto;
   padding-bottom: 1em;
   z-index: 10;
@@ -52,7 +53,7 @@
   align-items: center;
   justify-content: space-between;
   max-width: 50vw;
-  height: 4em;
+  min-height: 4em;
   padding-right: 5em;
 }
 
@@ -65,7 +66,7 @@
   display: flex;
   justify-content: space-between;
   width: auto;
-  height: 50px;
+  min-height: 50px;
 }
 
 .link-tag {
@@ -85,7 +86,7 @@
 .shopping-container {
   display: flex;
   justify-content: flex-start;
-  height: 50px;
+  min-height: 50px;
   width: 20em;
 }
 
@@ -108,7 +109,7 @@
 }
 
 .log-in-btn {
-  height: 4em;
+  min-height: 4em;
   width: 15em;
   margin-top: .7em;
   color: rgb(63, 200, 63);
