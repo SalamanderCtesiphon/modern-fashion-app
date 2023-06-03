@@ -11,9 +11,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url(../images/mountains.jpg);
-  background-size: cover;
-  background-position: center;
   height: 92.2vh;
   width: auto;
   padding: 0 6em;
