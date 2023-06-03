@@ -9,6 +9,9 @@
 .App {
   box-sizing: border-box;
   letter-spacing: .5em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* header styling ------------------------------------------------------------------------*/
@@ -20,7 +23,9 @@
   background-color: var(--main-dark-color);
   color: white;
   padding: .55em 0;
-  height: 4em;
+  height: 6vh;
+  min-height: 60px;
+  width: auto;
 }
 
 /* left side of header ------------*/
@@ -41,7 +46,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 45vw;
+  max-width: 50vw;
   height: 4em;
   padding-right: 5em;
 }
@@ -67,7 +72,7 @@
 
 .utility-container {
   display: flex;
-  width: 20vw;
+  max-width: 20vw;
   justify-content: space-between;
   align-items: center;
 }
@@ -76,7 +81,7 @@
   display: flex;
   justify-content: flex-start;
   height: 50px;
-  width: 30em;
+  width: 20em;
 }
 
 .shopping-cart {
@@ -87,6 +92,7 @@
 
 .product-count {
   position: absolute;
+  left: 84.3vw;
   background-color: rgb(153, 223, 153);
   border-radius: 50%;
   padding-left: 8px;
@@ -123,9 +129,11 @@ a {
   height: 4em;
 }
 
-.log-in-btn:hover {
+.log-in-btn:hover,
+#sign-in:hover {
   color: rgb(5, 245, 5);
 }
+
 
 .nav-link:hover,
 .nav-link.active {
@@ -184,6 +192,10 @@ a {
 
 .sign-in { 
   height: 10em;
+}
+
+#sign-in {
+  width: 10em;
 }
 
 li {
