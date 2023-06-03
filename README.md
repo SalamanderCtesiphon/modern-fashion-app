@@ -20,3 +20,4 @@ Some of the technologies utilized in this application include:
 - Enviromental variable file for storing API keys
 - CSS custom properties
 - Styled active links
+- Responsive Web Design
