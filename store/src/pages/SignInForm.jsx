@@ -27,16 +27,18 @@ function SignInForm() {
     <div className="page">
       <div className="card sign-in">
         <input 
+          className='form-input'
           placeholder='Email...' 
           type='email'
           onChange={(e) => setEmail(e.target.value)}
         />
         <input 
+          className='form-input'
           placeholder='Password...' 
           type='password'
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button onClick={() => signIn()}>Sign In</button>
+        <a className='links' onClick={() => signIn()}>Sign In</a>
       </div>
     </div>
   )
