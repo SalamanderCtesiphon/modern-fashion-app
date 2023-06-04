@@ -8,8 +8,10 @@
 
 
 .home-page {
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: auto;
   padding: 0 4em;
@@ -50,6 +52,7 @@
 }
 
 #social {
+  position: relative;
   background-color: green;
   text-decoration: none;
   color: white;
@@ -58,7 +61,8 @@
 }
 
 #social:hover {
-  background-color: white;
+  background-color: rgba(139, 139, 139, 0.55);
   color: green;
+  border: 1px solid green;
 }
 
