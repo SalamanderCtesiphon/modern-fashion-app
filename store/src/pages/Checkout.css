@@ -12,10 +12,11 @@
   align-items: center;
   justify-content: space-between;
   padding: 1em;
-  width: 45vw;
-  margin: 2em 0;
+  min-width: 60vw;
+  margin: 1em 0;
   background-color: rgba(255, 255, 255, 0.697);
   border-radius: 5px;
+  padding: 0.5em 3em;
 }
 
 .check-out-image {
