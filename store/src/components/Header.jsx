@@ -29,22 +29,18 @@ function Header({currentUser}) {
       </div>
       <div className="right-side">
         <div className="right-container">
-          <div className="link-list">
-            <div><a className="nav-link link-tag" href="shop">STORE</a></div>
-            <div><a className="nav-link link-tag" href="about">ABOUT</a></div>
-            <div><a className='nav-link link-tag' href="contact">CONTACT</a></div>        
-          </div>
+          <div><a className="nav-link link-tag" href="shop">STORE</a></div>
+          <div><a className="nav-link link-tag" href="about">ABOUT</a></div>
+          <div><a className='nav-link link-tag' href="contact">CONTACT</a></div>       
         </div>
         <div className="utility-container">
-          <div className="shopping-container link-list">
-            <a className='link-tag nav-link' href="checkout">CHECKOUT</a>
-            <div className='shopping-cart'>
-              { productsCount > 0 ? 
-                <div className='product-count'>{productsCount}</div>
-               :
-                <></>
-              }
-            </div>
+          <a className='link-tag nav-link' href="checkout">CHECKOUT</a>
+          <div className='shopping-cart'>
+            { productsCount > 0 ? 
+              <div className='product-count'>{productsCount}</div>
+              :
+              <></>
+            }
           </div>
           {currentUser ? <div className='log-in-btn link-tag' onClick={() => logout()}>LOGOUT</div> 
             : 
