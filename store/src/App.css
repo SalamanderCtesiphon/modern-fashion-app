@@ -18,6 +18,8 @@
   background-size: cover;
   background-position: center;
   min-height: 100vh;
+
+  z-index: 0;
 }
 
 /* header styling ------------------------------------------------------------------------*/
@@ -158,7 +160,7 @@ a {
   height: 100vh;
   width: 100vw;
   position: fixed;
-  z-index: -1;
+  z-index: 1;
 }
 
 .page .card {
