@@ -11,9 +11,8 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 92.2vh;
   width: auto;
-  padding: 0 6em;
+  padding: 0 4em;
 }
 
 .banner {
@@ -25,9 +24,9 @@
 
 #coffee-beans {
   margin-left: 3em;
-  height: 75vh;
+  max-height: 24em;
   width: auto;
-  border-radius: 49%;
+  border-radius: 50%;
   opacity: 80%;
   box-shadow: 2px 4px 20px 5px rgba(0, 0, 0, 0.709);
 }
@@ -36,18 +35,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1500px;
+  min-height: 69vh;
 }
 
 .text-card {
-  background-color: rgba(255, 255, 255, 0.729);
-  padding: 1.5em;
+  background-color: rgba(255, 255, 255, 0.793);
+  padding: 0 2em;
   border-radius: 1em;
-  width: 40vw;
-  max-height: 370px;
-  height: auto;
   text-align: end;
   line-height: 2em;
-  overflow: scroll;
+  margin: 2em;
+  max-width: 60vw;
 }
 
 #social {
