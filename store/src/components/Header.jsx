@@ -28,7 +28,7 @@ function Header({currentUser}) {
       <div className="left-container">
         <div className="icon-holder"><a href="home"><img src={logo} alt="company logo" id='logo' /></a></div>
       </div>
-      <img className='menu-icon' src={menu} alt="menu" />
+      <a href="mobilemenu"><img className='menu-icon' src={menu} alt="menu" /></a>
       <div className="right-side">
         <div className="right-container">
           <div><a className="nav-link link-tag" href="shop">STORE</a></div>
