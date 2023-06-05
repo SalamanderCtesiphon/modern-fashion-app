@@ -3,7 +3,7 @@ import { auth } from '../config/firebase'
 import { signOut } from 'firebase/auth'
 import { CartContext } from '../pages/CartContext'
 import logo from '../icons/Coffee.png'
-import MenuIcon from '@mui/icons-material/Menu';
+import menu from '../icons/icons8-menu-50.png'
 
 function Header({currentUser}) {
 
@@ -28,7 +28,7 @@ function Header({currentUser}) {
       <div className="left-container">
         <div className="icon-holder"><a href="home"><img src={logo} alt="company logo" id='logo' /></a></div>
       </div>
-      <MenuIcon />
+      <img className='menu-icon' src={menu} alt="menu" />
       <div className="right-side">
         <div className="right-container">
           <div><a className="nav-link link-tag" href="shop">STORE</a></div>
