@@ -83,3 +83,13 @@
 .increment:hover {
   background-color: rgba(199, 189, 189, 0.622);
 }
+
+@media (max-width: 1250px) {
+ .product-card {
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+ }
+}
