@@ -5,6 +5,7 @@
   height: auto;
   padding: 1em;
   min-height: 94vh;
+  padding-top: 5em;
 }
 
 .check-out-card {
@@ -53,3 +54,13 @@
   text-decoration: none;
   
 }
+
+@media (max-width: 1250px) {
+  .check-out-card {
+   flex-direction: column;
+   width: auto;
+   height: auto;
+   align-items: center;
+   justify-content: center;
+  }
+ }
