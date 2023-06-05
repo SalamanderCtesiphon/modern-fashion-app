@@ -15,6 +15,7 @@
   flex-direction: column;
   width: auto;
   padding: 0 4em;
+  margin-top: 3em;
 }
 
 .banner {
@@ -56,12 +57,12 @@
 
 .text-card {
   background-color: rgba(255, 255, 255, 0.793);
-  padding: 0 2em;
+  padding: 0 1em;
   border-radius: 1em;
   text-align: end;
   line-height: 2em;
-  margin: 2em;
-  max-width: 60vw;
+  margin: 1em;
+  max-width: 1000px;
 }
 
 #social {
