@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.659fadeb.css",
+    "main.js": "/static/js/main.327e6904.js",
+    "static/media/mountains.jpg": "/static/media/mountains.f5a4f7edfebabf07b022.jpg",
+    "static/media/coffee-beans.jpg": "/static/media/coffee-beans.fd980b16b3b83851a482.jpg",
+    "static/media/Coffee.png": "/static/media/Coffee.f601db9c410b5f3b95d3.png",
+    "index.html": "/index.html",
+    "main.659fadeb.css.map": "/static/css/main.659fadeb.css.map",
+    "main.327e6904.js.map": "/static/js/main.327e6904.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.659fadeb.css",
+    "static/js/main.327e6904.js"
+  ]
+}
