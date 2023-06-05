@@ -45,6 +45,12 @@
   z-index: 10;
 }
 
+@media (max-width: 1250px) {
+  #logo {
+    height: 7em;
+  }
+}
+
 /* right side of header ------------*/
 
 .right-side {
@@ -56,11 +62,23 @@
   width: 50%;
 }
 
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  background-color: #60292f;
+}
+
 @media (max-width: 1250px) {
   .right-side {
     display: none;
   }
-  
+  .menu-icon {
+    display: block;
+    padding: 0 2em;
+  }
 }
 
 .right-container {
