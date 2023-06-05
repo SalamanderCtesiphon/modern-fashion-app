@@ -16,6 +16,7 @@ import SignUpForm from './pages/SignUpForm';
 import { AuthProvider } from './AuthContext';
 import CartProvider from './pages/CartContext';
 import Contact from './pages/Contact';
+import MobileMenu from './pages/MobileMenu';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
@@ -43,6 +44,7 @@ function App() {
               <Route path='about' element={<About />} />
               <Route path='contact' element={<Contact />} />
               <Route path='checkout' element={<Checkout />} />
+              <Route path='mobilemenu' element={<MobileMenu />} />
             </Routes>
           </AuthProvider>
         </BrowserRouter>
